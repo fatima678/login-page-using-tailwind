@@ -1,25 +1,16 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Forms from './components/Forms';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <div className='flex w-full h-screen'>
+      <div className='w-full flex items-center justify-center lg:w-1/2'>
+        <Forms/>
 
-export default App;
+      </div>
+      {/* <div className=' hidden lg:flex h-full bg-gray-200'></div>
+      <div>Hello</div> */}
+    </div>
+  )
+}
